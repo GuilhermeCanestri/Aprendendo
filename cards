@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Perguntas Aleatórias</title>
+  <script>
+    function exibirPergunta() {
+      var perguntas = [
+        "Qual é o seu hobby favorito e por que você gosta dele?",
+        "Se você pudesse viajar para qualquer lugar do mundo, para onde iria e por quê?",
+        "Qual é uma meta que você gostaria de alcançar no próximo ano e quais passos está dando para alcançá-la?",
+        "Como você gosta de relaxar e descansar após um longo dia?",
+        "Se você pudesse jantar com qualquer figura histórica, quem seria e por quê?"
+      ];
+
+      var indice = Math.floor(Math.random() * perguntas.length);
+      var pergunta = perguntas[indice];
+      document.getElementById("pergunta").innerHTML = pergunta;
+    }
+  </script>
+</head>
+<body>
+  <h1>Perguntas Aleatórias</h1>
+  <button onclick="exibirPergunta()">Mostrar Pergunta</button>
+  <p id="pergunta"></p>
+</body>
+</html>
